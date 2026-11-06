@@ -1,0 +1,955 @@
+{
+    "lastUpdatedAt": "2026-11-05T17:24:45.687+00:00",
+    "schemaProfile": "Sierra Leone National Patient Summary (Pre-FHIR Reference)",
+    "standardsNote": "Proposed Sierra Leone local adaptation informed by ISO 27269:2025; not an ISO or FHIR/IPS conformity claim.",
+    "clinicalSections": {
+        "alerts": {
+            "entries": [
+                {
+                    "nps1203AlertStatus": "Active",
+                    "nps1204AlertSource": "TEST-EMR",
+                    "nps1202AlertCategory": "Safety",
+                    "nps1205EffectiveDate": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-1201",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 1201"
+                    },
+                    "nps1201AlertDescription": "Synthetic safety alert",
+                    "nps1205EffectiveDateRaw": null,
+                    "nps1206LinkedClinicalEntryId": "TEST-ENTRY-601"
+                }
+            ],
+            "blockCode": "NPS-12",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "vitalSigns": {
+            "entries": [
+                {
+                    "nps2003Unit": "mmHg",
+                    "nps2002ValueRaw": "120/80",
+                    "nps2001VitalSign": "BP",
+                    "nps2003UnitOther": null,
+                    "nps2002BpSystolic": 120,
+                    "nps2002BpDiastolic": 80,
+                    "nps2002ValueNumeric": null,
+                    "nps2005BodyPosition": null,
+                    "nps2001VitalSignOther": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-2001",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 2001"
+                    },
+                    "nps2006MeasurementMethod": null,
+                    "nps2002ValueUnknownReason": null,
+                    "nps2004MeasurementDateRaw": "2025-01-04T09:00Z",
+                    "nps2004MeasurementDateTime": "2025-01-04T09:00:00+00:00",
+                    "nps2004MeasurementDateUnknownReason": null
+                }
+            ],
+            "blockCode": "NPS-20",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "pastProblems": {
+            "entries": [
+                {
+                    "nps1803OnsetDate": null,
+                    "nps1803OnsetDateRaw": null,
+                    "nps1803ResolutionDate": null,
+                    "nps1804LastingEffects": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-1801",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 1801"
+                    },
+                    "nps1802HistoricalStatus": "Resolved",
+                    "nps1801PastConditionCode": null,
+                    "nps1801PastConditionText": "Synthetic past condition",
+                    "nps1803ResolutionDateRaw": null,
+                    "nps1801ReferencedProblemSourceId": "TEST-ENTRY-503"
+                }
+            ],
+            "blockCode": "NPS-18",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "patientStory": {
+            "entries": [],
+            "blockCode": "NPS-19",
+            "nps0303ExtractionStatus": null,
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Withheld",
+            "nps0306SectionAccessRestriction": "Restricted",
+            "nps0305ReasonInformationUnavailable": "Restricted"
+        },
+        "immunizations": {
+            "entries": [
+                {
+                    "nps0804DoseNumber": null,
+                    "nps0801VaccineCode": null,
+                    "nps0801VaccineText": "Synthetic vaccine",
+                    "nps0805VaccineBatch": null,
+                    "nps0806EvidenceSource": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-801",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 801"
+                    },
+                    "nps0808NextDoseDueDate": null,
+                    "nps0803DateAdministeredRaw": "Unknown",
+                    "nps0806EvidenceSourceOther": null,
+                    "nps0802AdministrationStatus": "Unknown",
+                    "nps0803DateAdministeredExact": null,
+                    "nps0807AdministeringFacilityId": null,
+                    "nps0803DateAdministeredUnknownReason": "Synthetic source omitted date"
+                }
+            ],
+            "blockCode": "NPS-08",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "socialHistory": {
+            "entries": [
+                {
+                    "nps1601TopicOther": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-1601",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 1601"
+                    },
+                    "nps1604ObservationDate": null,
+                    "nps1602ReportedResponse": "Unknown",
+                    "nps1603InformationSource": "Patient",
+                    "nps1605FrequencyQuantity": null,
+                    "nps1601SocialHistoryTopic": "Tobacco",
+                    "nps1604ObservationDateRaw": null,
+                    "nps1603InformationSourceOther": null
+                }
+            ],
+            "blockCode": "NPS-16",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "medicalDevices": {
+            "entries": [
+                {
+                    "nps1105BodySite": null,
+                    "nps1103DateStarted": null,
+                    "nps1104DateStopped": null,
+                    "nps1101DeviceTypeCode": null,
+                    "nps1101DeviceTypeText": "Synthetic prosthesis",
+                    "nps1103DateStartedRaw": null,
+                    "nps1104DateStoppedRaw": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-1101",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 1101"
+                    },
+                    "nps1102DeviceUseStatus": "Unknown",
+                    "nps1106DeviceIdentifier": "SYNTHETIC-MODEL"
+                }
+            ],
+            "blockCode": "NPS-11",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "functionalStatus": {
+            "entries": [
+                {
+                    "nps1402FindingText": "Synthetic assessment",
+                    "nps1402FindingScore": null,
+                    "nps1403AssessmentDate": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-1401",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 1401"
+                    },
+                    "nps1401FunctionAssessed": "Mobility",
+                    "nps1404AssistanceNeeded": null,
+                    "nps1403AssessmentDateRaw": "Unknown",
+                    "nps1401FunctionAssessedOther": null,
+                    "nps1403AssessmentDateUnknownReason": "Synthetic date absent"
+                }
+            ],
+            "blockCode": "NPS-14",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "pregnancyHistory": {
+            "entries": [],
+            "blockCode": "NPS-15",
+            "programmeGuidance": "Source document does not define detailed fields; do not invent a dataset",
+            "nps0303ExtractionStatus": "Unsupported",
+            "nps0304LastAssessedDate": null,
+            "nps1501PregnancyHistoryBlock": "Pending approved maternal-health data dictionary",
+            "nps0302SectionInformationStatus": "Unknown",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "advanceDirectives": {
+            "entries": [],
+            "blockCode": "NPS-13",
+            "nps0303ExtractionStatus": null,
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Withheld",
+            "nps0306SectionAccessRestriction": "Withheld",
+            "nps0305ReasonInformationUnavailable": "Restricted"
+        },
+        "medicationSummary": {
+            "entries": [
+                {
+                    "nps0706Route": null,
+                    "nps0709EndDate": null,
+                    "nps0704Strength": null,
+                    "nps0705DoseText": null,
+                    "nps0705DoseUnit": null,
+                    "nps0705DoseValue": null,
+                    "nps0707Frequency": null,
+                    "nps0708StartDate": null,
+                    "nps0706RouteOther": null,
+                    "nps0709EndDateRaw": null,
+                    "nps0701MedicineCode": null,
+                    "nps0701MedicineName": "Synthetic medicine TEST-ENTRY-701",
+                    "nps0708StartDateRaw": null,
+                    "nps0711PrescriberId": null,
+                    "nps0703EvidenceOfUse": "Prescribed",
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-701",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 701"
+                    },
+                    "nps0702MedicationStatus": "Unknown",
+                    "nps0710ReasonForUseCode": null,
+                    "nps0710ReasonForUseText": null
+                },
+                {
+                    "nps0706Route": null,
+                    "nps0709EndDate": null,
+                    "nps0704Strength": null,
+                    "nps0705DoseText": null,
+                    "nps0705DoseUnit": null,
+                    "nps0705DoseValue": null,
+                    "nps0707Frequency": null,
+                    "nps0708StartDate": null,
+                    "nps0706RouteOther": null,
+                    "nps0709EndDateRaw": null,
+                    "nps0701MedicineCode": null,
+                    "nps0701MedicineName": "Synthetic medicine TEST-ENTRY-702",
+                    "nps0708StartDateRaw": null,
+                    "nps0711PrescriberId": null,
+                    "nps0703EvidenceOfUse": "Prescribed",
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-702",
+                        "nps0408SourceEncounter": "TEST-VISIT-1",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 702"
+                    },
+                    "nps0702MedicationStatus": "Completed",
+                    "nps0710ReasonForUseCode": null,
+                    "nps0710ReasonForUseText": null
+                }
+            ],
+            "blockCode": "NPS-07",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "carePlanAndFollowUp": {
+            "entries": [
+                {
+                    "plannedActions": [
+                        {
+                            "nps1706DueDate": null,
+                            "nps1706DueDateRaw": null,
+                            "nps1705ActionStatus": "Pending",
+                            "nps1704PlannedActionText": "Synthetic referral",
+                            "nps1707ReceivingFacilityId": "TEST-F02",
+                            "nps1704PlannedActionCategory": "Referral"
+                        },
+                        {
+                            "nps1706DueDate": null,
+                            "nps1706DueDateRaw": null,
+                            "nps1705ActionStatus": null,
+                            "nps1704PlannedActionText": "Synthetic review",
+                            "nps1707ReceivingFacilityId": null,
+                            "nps1704PlannedActionCategory": "Review"
+                        }
+                    ],
+                    "nps1701CarePlanId": "SYNTHETIC-PLAN-1",
+                    "nps1703PlanStatus": "Active",
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-1701",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 1701"
+                    },
+                    "nps1702CarePlanSummary": "Synthetic instructions"
+                }
+            ],
+            "blockCode": "NPS-17",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "historyOfProcedures": {
+            "entries": [
+                {
+                    "nps1005Outcome": null,
+                    "nps1001ProcedureCode": null,
+                    "nps1001ProcedureText": "Synthetic procedure",
+                    "nps1006Complications": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-1001",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 1001"
+                    },
+                    "nps1002ProcedureStatus": "Completed",
+                    "nps1003ProcedureDateRaw": "2025-01",
+                    "nps1003ProcedureDateTime": null,
+                    "nps1004PerformingFacilityId": null
+                }
+            ],
+            "blockCode": "NPS-10",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "problemsAndDiagnoses": {
+            "entries": [
+                {
+                    "nps0506Severity": null,
+                    "nps0504OnsetDateRaw": null,
+                    "nps0502ProblemStatus": "Active",
+                    "nps0506SeverityOther": null,
+                    "nps0504OnsetDateExact": null,
+                    "nps0507DiagnosisBasis": null,
+                    "nps0508ManagementNote": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Corrected",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-502",
+                        "nps0408SourceEncounter": "TEST-VISIT-1",
+                        "nps0410OriginalCodeSystem": "SYNTHETIC-CATALOG",
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": "TEST-CODE",
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 502"
+                    },
+                    "nps0505ResolutionDateRaw": null,
+                    "nps0503DiagnosisCertainty": "Suspected",
+                    "nps0505ResolutionDateExact": null,
+                    "nps0501ProblemDiagnosisCode": null,
+                    "nps0501ProblemDiagnosisText": "Synthetic source statement 502"
+                },
+                {
+                    "nps0506Severity": null,
+                    "nps0504OnsetDateRaw": null,
+                    "nps0502ProblemStatus": "Resolved",
+                    "nps0506SeverityOther": null,
+                    "nps0504OnsetDateExact": null,
+                    "nps0507DiagnosisBasis": null,
+                    "nps0508ManagementNote": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-503",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 503"
+                    },
+                    "nps0505ResolutionDateRaw": null,
+                    "nps0503DiagnosisCertainty": "Suspected",
+                    "nps0505ResolutionDateExact": null,
+                    "nps0501ProblemDiagnosisCode": "TEST-CODE-ONLY",
+                    "nps0501ProblemDiagnosisText": null
+                }
+            ],
+            "blockCode": "NPS-05",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "allergiesAndIntolerances": {
+            "entries": [
+                {
+                    "nps0607Criticality": null,
+                    "nps0601AllergenCode": null,
+                    "nps0601AllergenText": "Synthetic allergen TEST-ENTRY-601",
+                    "nps0605ReactionCode": null,
+                    "nps0605ReactionText": "Synthetic documented rash",
+                    "nps0602AllergyStatus": "Unknown",
+                    "nps0608FirstNotedDate": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-601",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 601"
+                    },
+                    "nps0604AllergyCategory": null,
+                    "nps0606ReactionSeverity": null,
+                    "nps0608FirstNotedDateRaw": null,
+                    "nps0603VerificationStatus": "Unconfirmed"
+                },
+                {
+                    "nps0607Criticality": null,
+                    "nps0601AllergenCode": null,
+                    "nps0601AllergenText": "Synthetic allergen TEST-ENTRY-602",
+                    "nps0605ReactionCode": null,
+                    "nps0605ReactionText": "Synthetic documented rash",
+                    "nps0602AllergyStatus": "Unknown",
+                    "nps0608FirstNotedDate": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-602",
+                        "nps0408SourceEncounter": "TEST-VISIT-1",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 602"
+                    },
+                    "nps0604AllergyCategory": null,
+                    "nps0606ReactionSeverity": null,
+                    "nps0608FirstNotedDateRaw": null,
+                    "nps0603VerificationStatus": "Unconfirmed"
+                }
+            ],
+            "blockCode": "NPS-06",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        "laboratoryAndImagingResults": {
+            "reports": [
+                {
+                    "nps0901ReportId": "SYNTHETIC-REPORT-TEST-ENTRY-901",
+                    "nps0902ReportType": "Laboratory",
+                    "resultObservations": [
+                        {
+                            "nps0907ResultUnit": "g/dL",
+                            "nps0905ResultItemCode": null,
+                            "nps0905ResultItemText": "Synthetic analyte",
+                            "nps0908ResultDateTime": null,
+                            "nps0909ReferenceRange": null,
+                            "nps0910Interpretation": null,
+                            "nps0906ResultValueChoice": null,
+                            "nps0906ResultValueNumeric": 13.25,
+                            "nps0906ResultValueNarrative": null,
+                            "nps0912ResultUnavailableOther": null,
+                            "nps0912ResultUnavailableReason": null
+                        },
+                        {
+                            "nps0907ResultUnit": null,
+                            "nps0905ResultItemCode": null,
+                            "nps0905ResultItemText": "Synthetic pending test",
+                            "nps0908ResultDateTime": null,
+                            "nps0909ReferenceRange": null,
+                            "nps0910Interpretation": null,
+                            "nps0906ResultValueChoice": null,
+                            "nps0906ResultValueNumeric": null,
+                            "nps0906ResultValueNarrative": null,
+                            "nps0912ResultUnavailableOther": null,
+                            "nps0912ResultUnavailableReason": "Pending"
+                        },
+                        {
+                            "nps0907ResultUnit": null,
+                            "nps0905ResultItemCode": null,
+                            "nps0905ResultItemText": "Synthetic withheld result",
+                            "nps0908ResultDateTime": null,
+                            "nps0909ReferenceRange": null,
+                            "nps0910Interpretation": null,
+                            "nps0906ResultValueChoice": null,
+                            "nps0906ResultValueNumeric": null,
+                            "nps0906ResultValueNarrative": null,
+                            "nps0912ResultUnavailableOther": null,
+                            "nps0912ResultUnavailableReason": "Withheld"
+                        }
+                    ],
+                    "nps0904ReportStatus": "Corrected",
+                    "nps0908ResultDateTime": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Corrected",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-901",
+                        "nps0408SourceEncounter": "TEST-VISIT-2",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 901"
+                    },
+                    "nps0903TestOrStudyCode": null,
+                    "nps0903TestOrStudyText": "Synthetic diagnostic study",
+                    "nps0911ImagingConclusion": null
+                },
+                {
+                    "nps0901ReportId": "SYNTHETIC-REPORT-TEST-ENTRY-902",
+                    "nps0902ReportType": "Imaging",
+                    "resultObservations": [],
+                    "nps0904ReportStatus": "Final",
+                    "nps0908ResultDateTime": null,
+                    "commonClinicalMetadata": {
+                        "updatedAt": "2026-11-05T17:24:45.639+00:00",
+                        "nps0403SourceSystem": "TEST-EMR",
+                        "nps0404DateRecorded": "2025-01-04T10:00:00+00:00",
+                        "nps0409Verification": null,
+                        "nps0402SourceFacility": "TEST-F01",
+                        "nps0407SourceProvider": null,
+                        "recordLifecycleStatus": "Active",
+                        "nps0401ClinicalEntryId": "TEST-ENTRY-902",
+                        "nps0408SourceEncounter": "TEST-VISIT-1",
+                        "nps0410OriginalCodeSystem": null,
+                        "nps0405ClinicalEventDateRaw": "2025-01",
+                        "nps0410OriginalClinicalCode": null,
+                        "nps0405ClinicalEventTimestamp": null,
+                        "nps0405ClinicalEventDatePrecision": "Year-Month",
+                        "nps0406OriginalRecordedDescription": "Synthetic source statement 902"
+                    },
+                    "nps0903TestOrStudyCode": null,
+                    "nps0903TestOrStudyText": "Synthetic diagnostic study",
+                    "nps0911ImagingConclusion": "Synthetic imaging impression"
+                }
+            ],
+            "blockCode": "NPS-09",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        }
+    },
+    "patientAndContacts": {
+        "nps0204Sex": null,
+        "recordStatus": "Active",
+        "nps0211District": null,
+        "nps0212Chiefdom": null,
+        "nps0213Locality": null,
+        "nps0201PatientName": "Synthetic Patient One",
+        "nps0205DateOfBirth": {
+            "raw": "1999-03",
+            "exactDate": null,
+            "precision": "Year-Month"
+        },
+        "nps0209VitalStatus": null,
+        "nps0210PhoneNumber": null,
+        "nps0206AgeAtAssessment": null,
+        "nps0214EmergencyContacts": [],
+        "nps0215ContactPermission": "Restricted",
+        "nps0208EstimatedBirthDate": null,
+        "nps0207DateOfAgeAssessment": null,
+        "nps0202SourcePatientIdentifier": {
+            "issuingSystem": "TEST-EMR",
+            "identifierValue": "LOCAL-1",
+            "issuingFacilityId": "TEST-F01"
+        },
+        "nps0203OtherPatientIdentifiers": []
+    },
+    "sectionCompleteness": [
+        {
+            "npsBlockCode": "NPS-05",
+            "priorityLevel": "Required",
+            "nps0301NpsBlock": "Problems & diagnoses",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-06",
+            "priorityLevel": "Required",
+            "nps0301NpsBlock": "Allergies & intolerances",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-07",
+            "priorityLevel": "Required",
+            "nps0301NpsBlock": "Medication summary",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-08",
+            "priorityLevel": "Recommended",
+            "nps0301NpsBlock": "Immunizations",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-09",
+            "priorityLevel": "Recommended",
+            "nps0301NpsBlock": "Laboratory & imaging results",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-10",
+            "priorityLevel": "Recommended",
+            "nps0301NpsBlock": "History of procedures",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-11",
+            "priorityLevel": "Recommended",
+            "nps0301NpsBlock": "Medical devices",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-12",
+            "priorityLevel": "Recommended",
+            "nps0301NpsBlock": "Alerts",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-13",
+            "priorityLevel": "Optional",
+            "nps0301NpsBlock": "Advance directives",
+            "nps0303ExtractionStatus": null,
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Withheld",
+            "nps0306SectionAccessRestriction": "Withheld",
+            "nps0305ReasonInformationUnavailable": "Restricted"
+        },
+        {
+            "npsBlockCode": "NPS-14",
+            "priorityLevel": "Optional",
+            "nps0301NpsBlock": "Functional status",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-15",
+            "priorityLevel": "Optional - pending approval",
+            "nps0301NpsBlock": "Pregnancy history",
+            "nps0303ExtractionStatus": "Unsupported",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Unknown",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-16",
+            "priorityLevel": "Optional",
+            "nps0301NpsBlock": "Social history",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-17",
+            "priorityLevel": "Optional",
+            "nps0301NpsBlock": "Care plan & follow-up",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-18",
+            "priorityLevel": "Optional",
+            "nps0301NpsBlock": "Past problems",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        },
+        {
+            "npsBlockCode": "NPS-19",
+            "priorityLevel": "Optional",
+            "nps0301NpsBlock": "Patient story",
+            "nps0303ExtractionStatus": null,
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Withheld",
+            "nps0306SectionAccessRestriction": "Restricted",
+            "nps0305ReasonInformationUnavailable": "Restricted"
+        },
+        {
+            "npsBlockCode": "NPS-20",
+            "priorityLevel": "Optional",
+            "nps0301NpsBlock": "Vital signs",
+            "nps0303ExtractionStatus": "Complete",
+            "nps0304LastAssessedDate": null,
+            "nps0305ReasonUnavailableOther": null,
+            "nps0302SectionInformationStatus": "Entries present",
+            "nps0306SectionAccessRestriction": "Normal",
+            "nps0305ReasonInformationUnavailable": null
+        }
+    ],
+    "documentAndProvenance": {
+        "nps0110Language": "English",
+        "nps0113Attester": null,
+        "nps0103PatientId": "TEST-MPI-1",
+        "nps0105SourceEmr": "TEST-EMR",
+        "nps0115Custodian": null,
+        "nps0101DocumentId": "SYNTHETIC-DOC-1",
+        "nps0110LanguageOther": null,
+        "supersedesDocumentId": null,
+        "nps0107DocumentStatus": "Current",
+        "nps0112ClinicalPeriod": {
+            "endDate": null,
+            "startDate": null
+        },
+        "nps0102DocumentVersion": "1",
+        "nps0108AuthorAssembler": "Synthetic test builder",
+        "nps0111Confidentiality": "Normal",
+        "nps0104SourceFacilityId": "TEST-F01",
+        "nps0109GenerationMethod": "Automated",
+        "nps0116ReceivedDateTime": null,
+        "nps0106GeneratedDateTime": "2025-01-05T09:00:00+00:00",
+        "nps0114AttestationDateTime": null,
+        "nps0117SourceRecordReference": null
+    },
+    "synchronisationStatus": {
+        "state": "Pending",
+        "acknowledgedAt": null
+    }
+}

@@ -1,0 +1,35 @@
+# Credentials come from the environment. Do not put usernames or passwords in this file.
+server:
+  address: 127.0.0.1
+  port: 8080
+  error:
+    include-message: never
+    include-binding-errors: never
+    include-stacktrace: never
+    include-exception: false
+spring:
+  application:
+    name: dhis2-emr-connector
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+    env:
+      show-values: never
+    configprops:
+      show-values: never
+dhis2:
+  base-url: ${DHIS2_BASE_URL:https://sl.dhis2.org/hmis23/}
+  username: "${DHIS2_USERNAME:madimaliaka}"
+  password: "${DHIS2_PASSWORD:Madimaliaka@001}"
+  connect-timeout: ${DHIS2_CONNECT_TIMEOUT:5s}
+  read-timeout: ${DHIS2_READ_TIMEOUT:20s}
+logging:
+  level:
+    org.springframework.web.client: INFO
+    org.springframework.http.client: INFO
+    jdk.httpclient: WARN
