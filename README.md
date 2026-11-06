@@ -1,10 +1,11 @@
 # DHIS2 EMR Connector
 
-Java 21, Spring Boot, and Maven connector for the Sierra Leone EMR. This version authenticates to DHIS2 and exposes a local connection check. It does not submit summary data.
+This project has two components for the Sierra Leone EMR.
 
-The packaged artifact is an executable JAR:
+- **DHIS2 connection check** uses Java 21, Spring Boot, and Maven to verify service-account authentication through a local endpoint.
+- **National Patient Summary (NPS) SQL** defines a PostgreSQL reference schema and generates a versioned patient summary from records loaded into it. See [NPS setup and demo](#national-patient-summary-nps-sql).
 
-`target/dhis2-emr-connector.jar`
+The Java connector builds as an executable JAR at `target/dhis2-emr-connector.jar`.
 
 ## Requirements
 
@@ -117,10 +118,47 @@ Copy `dhis2-emr-connector.jar` and run it with JDK 21. Set the same environment 
 
 No dataset UID, data-element UID, category option combination, organisation unit, or reporting period is configured. The connector has no summary-submission endpoint and does not connect to the DHIS2 database.
 
-## Still to confirm with SAN
+## National Patient Summary (NPS) SQL
 
-- The service account may use HTTP Basic over HTTPS, and which roles it needs.
-- Dataset UID, data-element UIDs, category option combinations, facility organisation-unit identifiers, and reporting-period rules.
-- Where the connector will run, and how the EMR will authenticate to it.
+The [NPS SQL package](emr-nps-sql/) maps 149 data dictionary elements across 20 blocks. It creates the `nps` schema, stores clinical records and their sources, and assembles a versioned patient summary in JSON. It also includes access controls, audit logging, validation queries, and a queue that tracks retries and receipts for offline synchronisation.
 
-Do not guess those identifiers and do not submit EMR summary data before they are confirmed.
+The SQL package runs separately in PostgreSQL 17 or later. Connecting it to the live EMR and exchanging summaries with the Shared Health Record (SHR) require the source-field mapping, an authenticated Spring Boot integration, and the approved SHR transport endpoint.
+
+### Set up the demo in pgAdmin
+
+1. On a local PostgreSQL test server, create an empty database named `nps_demo`.
+2. Open **Query Tool** on `nps_demo` with your local PostgreSQL administrator login. This login must be able to create the database roles and run the fixtures under those roles.
+3. Open and execute the files in [`emr-nps-sql/sql`](emr-nps-sql/sql/) once in order, starting with `001_create_schema.sql` and ending with `009_security.sql`.
+4. Open and execute [`synthetic_test_data.sql`](emr-nps-sql/tests/synthetic_test_data.sql) once. It loads fictional patient records and publishes the example summaries.
+
+### Show the patient summary
+
+After setup, open a new **Query Tool** tab on `nps_demo` and execute the complete query below.
+
+```sql
+WITH demo AS (
+    SELECT nps.get_patient_summary(
+        '00000000-0000-4000-8000-000000000001'::uuid
+    ) AS summary
+)
+SELECT
+    summary #>> '{documentAndProvenance,nps0101DocumentId}' AS document_id,
+    jsonb_array_length(
+        summary #> '{clinicalSections,laboratoryAndImagingResults,reports}'
+    ) AS lab_and_imaging_reports,
+    summary #>> '{clinicalSections,patientStory,nps0302SectionInformationStatus}' AS patient_story,
+    jsonb_pretty(summary) AS full_patient_summary
+FROM demo;
+```
+
+**Expected result.** One row for `SYNTHETIC-DOC-1`, with **2** lab and imaging reports and **Withheld** for the patient story. The last column contains the full JSON. [Example summary](emr-nps-sql/examples/patient_summary_example.json)
+
+### Run the SQL tests
+
+With the synthetic data loaded in `nps_demo`, execute each test file in pgAdmin.
+
+- [`patient_summary_tests.sql`](emr-nps-sql/tests/patient_summary_tests.sql) checks patient lookup, corrected records, access restrictions, and audit entries.
+- [`offline_sync_test.sql`](emr-nps-sql/tests/offline_sync_test.sql) checks retries, duplicate deliveries, receipts, and invalidation.
+
+Successful test runs finish without an SQL error. Both scripts roll back their test changes, so the original synthetic demo remains available.
+
